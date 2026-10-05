@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grid Area Media Query</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 70%;
+            margin: 50px auto;
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr;
+
+            grid-template-rows:
+                55px
+                75px
+                75px
+                75px;
+
+            gap: 10px;
+
+            grid-template-areas:
+                "nav nav"
+                "left r1"
+                "left r2"
+                "left r3";
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: yellow;
+            padding: 8px;
+            font-size: 25px;
+        }
+
+        .left {
+            grid-area: left;
+            background-color: red;
+            padding: 8px;
+        }
+
+        .r1 {
+            grid-area: r1;
+        }
+
+        .r2 {
+            grid-area: r2;
+        }
+
+        .r3 {
+            grid-area: r3;
+        }
+
+        .right {
+            background-color: #00f52a;
+            padding: 8px;
+        }
+
+        /* Medium */
+        @media (max-width: 900px) {
+
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+
+                grid-template-rows:
+                    55px
+                    165px
+                    75px;
+
+                grid-template-areas:
+                    "nav nav nav"
+                    "left left left"
+                    "r1 r2 r3";
+            }
+        }
+
+        /* Small */
+        @media (max-width: 600px) {
+
+            .container {
+                width: 70%;
+
+                grid-template-columns: 1fr;
+
+                grid-template-rows:
+                    55px
+                    190px
+                    150px
+                    150px
+                    150px;
+
+                grid-template-areas:
+                    "nav"
+                    "left"
+                    "r1"
+                    "r2"
+                    "r3";
+            }
+
+            nav {
+                font-size: 30px;
+            }
+
+            .left,
+            .right {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>Navigation</nav>
+
+        <div class="left">
+            LEFT BOX
+        </div>
+
+        <div class="right r1">
+            RIGHT BOX 1
+        </div>
+
+        <div class="right r2">
+            RIGHT BOX 2
+        </div>
+
+        <div class="right r3">
+            RIGHT BOX 3
+        </div>
+
+    </div>
+
+</body>
+</html>

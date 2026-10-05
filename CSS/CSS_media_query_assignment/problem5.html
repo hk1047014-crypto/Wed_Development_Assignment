@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Investors</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .investors {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            height: 110px;
+            background-color: white;
+            border-radius: 8px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 15px;
+
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card:nth-child(1) {
+            color: #e31d2b;
+        }
+
+        .card:nth-child(2) {
+            color: #1687d9;
+        }
+
+        .card:nth-child(3) {
+            color: #e4a11b;
+        }
+
+        .card:nth-child(4) {
+            color: #5b48a8;
+        }
+
+        .card:nth-child(5) {
+            color: #168a63;
+        }
+
+        .card:nth-child(6) {
+            color: #f05a28;
+        }
+
+        .card:nth-child(7) {
+            color: #111;
+        }
+
+        .card:nth-child(8) {
+            color: #cc2b6c;
+        }
+
+        /* Medium */
+        @media (max-width: 900px) {
+
+            .investors {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Small */
+        @media (max-width: 550px) {
+
+            section {
+                margin: 30px auto;
+            }
+
+            .investors {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+
+        <h1>Our Investors</h1>
+
+        <p class="subtitle">
+            Our investors who believe in us
+        </p>
+
+        <div class="investors">
+
+            <div class="card">Unitus Ventures</div>
+
+            <div class="card">Omidyar Network</div>
+
+            <div class="card">India Quotient</div>
+
+            <div class="card">Sequoia Capital</div>
+
+            <div class="card">BharatPe</div>
+
+            <div class="card">Paytm</div>
+
+            <div class="card">Tiger Global</div>
+
+            <div class="card">Lightspeed</div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

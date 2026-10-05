@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media Query Problem 3</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 70%;
+            margin: 50px auto;
+        }
+
+        nav {
+            background-color: yellow;
+            height: 55px;
+            padding: 8px;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            display: flex;
+            gap: 34px;
+        }
+
+        .box {
+            height: 225px;
+            padding: 8px;
+            font-size: 14px;
+            flex: 1;
+        }
+
+        .left {
+            background-color: red;
+        }
+
+        .right {
+            background-color: #00f52a;
+        }
+
+        /* Small Screen */
+        @media (max-width: 600px) {
+
+            .content {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .box {
+                height: 190px;
+                font-size: 22px;
+            }
+
+            nav {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>Navigation</nav>
+
+        <div class="content">
+
+            <div class="box left">
+                LEFT BOX
+            </div>
+
+            <div class="box right">
+                RIGHT BOX
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

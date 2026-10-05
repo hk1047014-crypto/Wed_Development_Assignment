@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Listing Portal</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Grouping Selector */
+        h1, h2, p {
+            margin-top: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #222;
+        }
+
+        /* ID Selector */
+        #movie-list {
+            width: 800px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        /* Class Selector */
+        .movie-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .movie-title {
+            font-size: 21px;
+            margin: 15px 0 8px;
+            color: #222;
+        }
+
+        .release-date {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .book-btn {
+            background-color: #e63946;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .book-btn:hover {
+            background-color: #b91c2a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Now Showing</h1>
+
+    <div id="movie-list">
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7qYQ2nXk5Yf.jpg" alt="ET">
+            <h2 class="movie-title">ET (2022)</h2>
+            <p class="release-date">Releasing on 11 Mar, 2022</p>
+            <button class="book-btn">Book Tickets</button>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/3D5bJkJm0Q5m0Y5X3mKf8nJ3zL.jpg" alt="Jhund">
+            <h2 class="movie-title">Jhund</h2>
+            <p class="release-date">Releasing on 4 Mar, 2022</p>
+            <button class="book-btn">Book Tickets</button>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/7B2mdJ5t5f7Qf5r5w5nJ5J5J5.jpg" alt="Gangubai Kathiawadi">
+            <h2 class="movie-title">Gangubai Kathiawadi</h2>
+            <p class="release-date">Releasing on 25 Feb, 2022</p>
+            <button class="book-btn">Book Tickets</button>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/4Y2QJ5J5J5J5J5J5J5J5J5J5.jpg" alt="Radhe Shyam">
+            <h2 class="movie-title">Radhe Shyam</h2>
+            <p class="release-date">Releasing on 11 Mar, 2022</p>
+            <button class="book-btn">Book Tickets</button>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/rK3j5J5J5J5J5J5J5J5J5J5J5.jpg" alt="Uncharted">
+            <h2 class="movie-title">Uncharted</h2>
+            <p class="release-date">Releasing on 18 Feb, 2022</p>
+            <button class="book-btn">Book Tickets</button>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="The Batman">
+            <h2 class="movie-title">The Batman</h2>
+            <p class="release-date">Releasing on 4 Mar, 2022</p>
+            <button class="book-btn">Book Tickets</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
