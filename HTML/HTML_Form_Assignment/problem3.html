@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Course Enrollment</title>
+</head>
+
+<body>
+
+    <h1>Online Course Enrollment & Student Registration</h1>
+
+    <p>
+        Welcome to our online course enrollment page.
+        Fill in your details and select the course you want to learn.
+    </p>
+
+    <img src="images/course.svg"
+         alt="Online Course"
+         width="500"
+         height="250">
+
+    <p>
+        <a href="https://glaonline.com/info/online-common/?utm_source=Stealth&utm_medium=Google&utm_campaign=Stealth-Common-BRAND-UP-Delhi-NCR-2026&utm_adgroupid=195483335252&utm_creativeid=788745384706&utm_matchtype=p&utm_device=c&utm_network=g&utm_keyword=online%20gla&utm_placement=&gad_source=1&gad_campaignid=23240919093&gbraid=0AAAAApPx9_Vh3-PB730YZ6zPR1OHjfBfL&gclid=CjwKCAjw48TUBhBREiwAK0GnQaMJ97iiDiC9QV_LupU5g8WjxiTAy8wm2bn993rqai7qnnIQtJSyWhoCBqsQAvD_BwE">Home</a>
+    </p>
+
+    <p>
+        <a href="https://www.coursera.org/" target="_blank">
+            Course Information
+        </a>
+    </p>
+
+    <hr>
+
+
+    <form action="#" method="post">
+
+        <h2>Student Account Information</h2>
+
+
+        <label for="student_name">
+            Student Name:
+        </label>
+        <br>
+
+        <input type="text"
+               id="student_name"
+               name="student_name"
+               placeholder="Enter your full name"
+               minlength="3"
+               maxlength="50"
+               required>
+
+        <br><br>
+
+
+        <label for="email">
+            Email:
+        </label>
+        <br>
+
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="example@gmail.com"
+               required>
+
+        <br><br>
+
+
+        <label for="password">
+            Password:
+        </label>
+        <br>
+
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Enter password"
+               minlength="8"
+               maxlength="30"
+               required>
+
+        <br><br>
+
+
+        <label for="mobile">
+            Mobile Number:
+        </label>
+        <br>
+
+        <input type="tel"
+               id="mobile"
+               name="mobile"
+               placeholder="Enter 10 digit mobile number"
+               pattern="[0-9]{10}"
+               maxlength="10"
+               required>
+
+        <br><br>
+
+
+        <label for="dob">
+            Date of Birth:
+        </label>
+        <br>
+
+        <input type="date"
+               id="dob"
+               name="date_of_birth"
+               min="1990-01-01"
+               max="2015-12-31"
+               required>
+
+        <br><br>
+
+        <hr>
+
+
+        <h2>Course Information</h2>
+
+
+        <label for="course">
+            Select Course:
+        </label>
+        <br>
+
+        <select id="course"
+                name="course"
+                required>
+
+            <option value="">
+                -- Select Course --
+            </option>
+
+            <option value="java">
+                Java Programming
+            </option>
+
+            <option value="python">
+                Python Programming
+            </option>
+
+            <option value="web">
+                Web Development
+            </option>
+
+            <option value="dsa">
+                Data Structures & Algorithms
+            </option>
+
+            <option value="database">
+                Database Management
+            </option>
+
+            <option value="ai">
+                Artificial Intelligence
+            </option>
+
+        </select>
+
+        <br><br>
+
+
+        <label for="batch">
+            Select Batch / Session:
+        </label>
+        <br>
+
+        <select id="batch"
+                name="batch"
+                required>
+
+            <option value="">
+                -- Select Batch --
+            </option>
+
+            <option value="morning">
+                Morning Batch
+            </option>
+
+            <option value="afternoon">
+                Afternoon Batch
+            </option>
+
+            <option value="evening">
+                Evening Batch
+            </option>
+
+            <option value="weekend">
+                Weekend Batch
+            </option>
+
+        </select>
+
+        <br><br>
+
+
+        <label>
+            Learning Mode:
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="online"
+               name="learning_mode"
+               value="online"
+               required>
+
+        <label for="online">
+            Online
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="offline"
+               name="learning_mode"
+               value="offline">
+
+        <label for="offline">
+            Offline
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="hybrid"
+               name="learning_mode"
+               value="hybrid">
+
+        <label for="hybrid">
+            Hybrid
+        </label>
+
+        <br><br>
+
+
+        <h3>Areas of Interest</h3>
+
+        <input type="checkbox"
+               id="java"
+               name="interest"
+               value="java">
+
+        <label for="java">
+            Java
+        </label>
+
+        <br>
+
+
+        <input type="checkbox"
+               id="python"
+               name="interest"
+               value="python">
+
+        <label for="python">
+            Python
+        </label>
+
+        <br>
+
+
+        <input type="checkbox"
+               id="web"
+               name="interest"
+               value="web_development">
+
+        <label for="web">
+            Web Development
+        </label>
+
+        <br>
+
+
+        <input type="checkbox"
+               id="dsa"
+               name="interest"
+               value="data_structures">
+
+        <label for="dsa">
+            Data Structures
+        </label>
+
+        <br>
+
+
+        <input type="checkbox"
+               id="database"
+               name="interest"
+               value="database">
+
+        <label for="database">
+            Database
+        </label>
+
+        <br><br>
+
+        <hr>
+
+
+        <h2>Education Background</h2>
+
+
+        <label for="education">
+            Education Level:
+        </label>
+        <br>
+
+        <select id="education"
+                name="education_level"
+                required>
+
+            <option value="">
+                -- Select Education Level --
+            </option>
+
+            <option value="12th">
+                12th / Senior Secondary
+            </option>
+
+            <option value="diploma">
+                Diploma
+            </option>
+
+            <option value="undergraduate">
+                Undergraduate
+            </option>
+
+            <option value="postgraduate">
+                Postgraduate
+            </option>
+
+        </select>
+
+        <br><br>
+
+
+        <label for="institution">
+            College / Institution:
+        </label>
+        <br>
+
+        <input type="text"
+               id="institution"
+               name="institution"
+               placeholder="Enter college or institution"
+               minlength="2"
+               maxlength="100"
+               required>
+
+        <br><br>
+
+
+        <label for="semester">
+            Current Semester / Year:
+        </label>
+        <br>
+
+        <input type="text"
+               id="semester"
+               name="semester_year"
+               placeholder="Example: 1st Semester"
+               maxlength="30"
+               required>
+
+        <br><br>
+
+
+        <label for="experience">
+            Programming Experience (Years):
+        </label>
+        <br>
+
+        <input type="number"
+               id="experience"
+               name="programming_experience"
+               min="0"
+               max="20"
+               step="0.5"
+               value="0">
+
+        <br><br>
+
+
+        <label for="github">
+            GitHub / Portfolio URL:
+        </label>
+        <br>
+
+        <input type="url"
+               id="github"
+               name="github_portfolio"
+               placeholder="https://github.com/username">
+
+        <br><br>
+
+
+        <label for="goals">
+            Learning Goals:
+        </label>
+        <br>
+
+        <textarea id="goals"
+                  name="learning_goals"
+                  rows="5"
+                  cols="50"
+                  minlength="10"
+                  maxlength="500"
+                  placeholder="Tell us what you want to learn"
+                  required></textarea>
+
+        <br><br>
+
+        <hr>
+
+
+        <h3>Confirmation</h3>
+
+        <input type="checkbox"
+               id="confirmation"
+               name="confirmation"
+               value="confirmed"
+               required>
+
+        <label for="confirmation">
+            I confirm that the information provided by me
+            is correct.
+        </label>
+
+        <br><br>
+
+
+        <input type="submit"
+               value="Register">
+
+        <input type="reset"
+               value="Reset Form">
+
+    </form>
+
+</body>
+
+</html>

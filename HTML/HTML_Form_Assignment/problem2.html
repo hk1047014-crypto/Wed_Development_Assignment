@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clinic Appointment Booking</title>
+</head>
+
+<body>
+
+    <h1>Hospital / Clinic Appointment Booking</h1>
+
+    <p>
+        Welcome to our clinic appointment booking page.
+        Please fill in your details and select your preferred
+        appointment time.
+    </p>
+
+    <img src="images/clinic.svg"
+         alt="Clinic Appointment"
+         width="500"
+         height="250">
+
+    <p>
+        <a href="https://www.fortishealthcare.com/location/fortis-hospital-greater-noida">Home</a>
+    </p>
+
+    <p>
+        Clinic Contact:
+        <a href="tel:+919050156865">Call Clinic</a>
+    </p>
+
+    <p>
+        Emergency:
+        <a href="tel:112">Call Emergency 112</a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <h2>Patient Information</h2>
+
+        <label for="patient_name">
+            Patient Name:
+        </label>
+        <br>
+
+        <input type="text"
+               id="patient_name"
+               name="patient_name"
+               placeholder="Enter patient name"
+               minlength="3"
+               maxlength="50"
+               required>
+
+        <br><br>
+
+
+        <label for="email">
+            Email:
+        </label>
+        <br>
+
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="example@gmail.com"
+               required>
+
+        <br><br>
+
+
+        <label for="mobile">
+            Mobile Number:
+        </label>
+        <br>
+
+        <input type="tel"
+               id="mobile"
+               name="mobile"
+               placeholder="Enter 10 digit mobile number"
+               pattern="[0-9]{10}"
+               maxlength="10"
+               required>
+
+        <br><br>
+
+
+        <label for="dob">
+            Date of Birth:
+        </label>
+        <br>
+
+        <input type="date"
+               id="dob"
+               name="date_of_birth"
+               min="1900-01-01"
+               max="2026-12-31"
+               required>
+
+        <br><br>
+
+
+        <label for="patient_id">
+            Patient ID:
+        </label>
+        <br>
+
+        <input type="text"
+               id="patient_id"
+               name="patient_id"
+               placeholder="Optional"
+               maxlength="20">
+
+        <br><br>
+
+        <hr>
+
+        <h2>Appointment Details</h2>
+
+
+        <label for="appointment_date">
+            Appointment Date:
+        </label>
+        <br>
+
+        <input type="date"
+               id="appointment_date"
+               name="appointment_date"
+               min="2026-08-28"
+               max="2026-12-31"
+               required>
+
+        <br><br>
+
+
+        <label for="appointment_time">
+            Appointment Time:
+        </label>
+        <br>
+
+        <input type="time"
+               id="appointment_time"
+               name="appointment_time"
+               min="09:00"
+               max="18:00"
+               required>
+
+        <br><br>
+
+
+        <label for="doctor">
+            Select Doctor:
+        </label>
+        <br>
+
+        <select id="doctor"
+                name="doctor"
+                required>
+
+            <option value="">
+                -- Select Doctor --
+            </option>
+
+            <option value="arjun_mehta">
+                Dr. Arjun Mehta - Cardiology
+            </option>
+
+            <option value="neha_sharma">
+                Dr. Neha Sharma - Dermatology
+            </option>
+
+            <option value="rohan_verma">
+                Dr. Rohan Verma - Orthopedics
+            </option>
+
+            <option value="priya_singh">
+                Dr. Priya Singh - Pediatrics
+            </option>
+
+            <option value="kabir_gupta">
+                Dr. Kabir Gupta - General Medicine
+            </option>
+
+        </select>
+
+        <br><br>
+
+
+        <label>
+            Visit Type:
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="new_patient"
+               name="visit_type"
+               value="new_patient"
+               required>
+
+        <label for="new_patient">
+            New Patient
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="follow_up"
+               name="visit_type"
+               value="follow_up">
+
+        <label for="follow_up">
+            Follow-up
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="consultation"
+               name="visit_type"
+               value="consultation">
+
+        <label for="consultation">
+            Consultation
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="emergency"
+               name="visit_type"
+               value="emergency">
+
+        <label for="emergency">
+            Emergency
+        </label>
+
+        <br><br>
+
+
+        <label>
+            Preferred Communication Method:
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="email_contact"
+               name="communication"
+               value="email"
+               required>
+
+        <label for="email_contact">
+            Email
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="phone_contact"
+               name="communication"
+               value="phone">
+
+        <label for="phone_contact">
+            Phone
+        </label>
+
+        <br>
+
+        <input type="radio"
+               id="sms_contact"
+               name="communication"
+               value="sms">
+
+        <label for="sms_contact">
+            SMS
+        </label>
+
+        <br><br>
+
+
+        <label for="reason">
+            Reason for Visit / Additional Information:
+        </label>
+
+        <br>
+
+        <textarea id="reason"
+                  name="reason"
+                  rows="5"
+                  cols="50"
+                  minlength="5"
+                  maxlength="500"
+                  placeholder="Enter reason for your visit"
+                  required></textarea>
+
+        <br><br>
+
+        <hr>
+
+        <h3>Appointment Terms</h3>
+
+        <input type="checkbox"
+               id="terms"
+               name="appointment_terms"
+               value="accepted"
+               required>
+
+        <label for="terms">
+            I accept the clinic appointment terms
+            and confirm that the information provided
+            by me is correct.
+        </label>
+
+        <br><br>
+
+
+        <input type="submit"
+               value="Book Appointment">
+
+        <input type="reset"
+               value="Reset Form">
+
+    </form>
+
+    <hr>
+
+    <h2>Clinic Timings</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+        </tr>
+
+        <tr>
+            <td>Monday - Friday</td>
+            <td>9:00 AM</td>
+            <td>6:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Saturday</td>
+            <td>9:00 AM</td>
+            <td>2:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Sunday</td>
+            <td>Closed</td>
+            <td>Closed</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

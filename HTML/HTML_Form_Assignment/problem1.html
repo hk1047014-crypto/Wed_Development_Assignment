@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Form</title>
+</head>
+
+<body>
+
+    <h1>College Admission Application Form</h1>
+
+    <p>
+        Welcome to the college admission application page.
+        Please fill in all the required information carefully.
+    </p>
+
+    <img src="images/college.svg"
+         alt="College Admission"
+         width="500"
+         height="250"
+       
+
+       <p></p>
+        <a href="https://noida.gla.ac.in/">Home</a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <h2>Personal Information</h2>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text"
+               id="fullname"
+               name="full_name"
+               placeholder="Enter your full name"
+               minlength="3"
+               maxlength="50"
+               required>
+        <br><br>
+
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date"
+               id="dob"
+               name="date_of_birth"
+               min="1990-01-01"
+               max="2015-12-31"
+               required>
+        <br><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="example@gmail.com"
+               required>
+        <br><br>
+
+
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel"
+               id="mobile"
+               name="mobile"
+               placeholder="Enter 10 digit mobile number"
+               pattern="[0-9]{10}"
+               maxlength="10"
+               required>
+        <br><br>
+
+
+        <label for="pin">Application PIN:</label><br>
+        <input type="password"
+               id="pin"
+               name="application_pin"
+               placeholder="Enter 6 digit PIN"
+               minlength="6"
+               maxlength="6"
+               pattern="[0-9]{6}"
+               required>
+        <br><br>
+
+
+        <label>Gender:</label><br>
+
+        <input type="radio"
+               id="male"
+               name="gender"
+               value="male"
+               required>
+        <label for="male">Male</label>
+
+        <input type="radio"
+               id="female"
+               name="gender"
+               value="female">
+        <label for="female">Female</label>
+
+        <input type="radio"
+               id="other"
+               name="gender"
+               value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+
+        <label for="category">Category:</label><br>
+
+        <select id="category"
+                name="category"
+                required>
+
+            <option value="">-- Select Category --</option>
+            <option value="general">General</option>
+            <option value="ews">EWS</option>
+            <option value="obc">OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+
+        </select>
+
+        <br><br>
+
+
+        <label for="course">Course / Program:</label><br>
+
+        <select id="course"
+                name="course"
+                required>
+
+            <option value="">-- Select Course --</option>
+            <option value="btech-cse">B.Tech Computer Science</option>
+            <option value="btech-ai">B.Tech Artificial Intelligence</option>
+            <option value="bsc-maths">B.Sc Mathematics</option>
+            <option value="bsc-cs">B.Sc Computer Science</option>
+            <option value="bca">BCA</option>
+            <option value="bba">BBA</option>
+
+        </select>
+
+        <br><br>
+
+
+        <label for="address">Permanent Address:</label><br>
+
+        <textarea id="address"
+                  name="permanent_address"
+                  rows="5"
+                  cols="50"
+                  minlength="10"
+                  maxlength="250"
+                  placeholder="Enter your complete address"
+                  required></textarea>
+
+        <br><br>
+
+        <hr>
+
+        <h2>Previous Qualification</h2>
+
+
+        <label for="qualification">
+            Previous Qualification:
+        </label><br>
+
+        <select id="qualification"
+                name="previous_qualification"
+                required>
+
+            <option value="">-- Select Qualification --</option>
+            <option value="12th">12th / 10+2</option>
+            <option value="diploma">Diploma</option>
+            <option value="graduation">Graduation</option>
+
+        </select>
+
+        <br><br>
+
+
+        <label for="percentage">
+            Percentage / CGPA:
+        </label><br>
+
+        <input type="number"
+               id="percentage"
+               name="percentage_cgpa"
+               min="0"
+               max="100"
+               step="0.01"
+               placeholder="Enter percentage"
+               required>
+
+        <br><br>
+
+
+        <label for="year">
+            Passing Year:
+        </label><br>
+
+        <input type="number"
+               id="year"
+               name="passing_year"
+               min="2000"
+               max="2030"
+               required>
+
+        <br><br>
+
+
+        <label for="school">
+            School / College Name:
+        </label><br>
+
+        <input type="text"
+               id="school"
+               name="school_college"
+               minlength="2"
+               maxlength="100"
+               placeholder="Enter school or college name"
+               required>
+
+        <br><br>
+
+
+        <label for="document">
+            Admission Document:
+        </label><br>
+
+        <input type="file"
+               id="document"
+               name="admission_document">
+
+        <br><br>
+
+        <hr>
+
+        <h3>Declaration</h3>
+
+        <input type="checkbox"
+               id="declaration"
+               name="declaration"
+               value="accepted"
+               required>
+
+        <label for="declaration">
+            I declare that all the information provided by me
+            is correct and complete.
+        </label>
+
+        <br><br>
+
+
+        <input type="submit"
+               value="Submit Application">
+
+        <input type="reset"
+               value="Reset Form">
+
+    </form>
+
+</body>
+</html>
