@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        header {
+            background: #172b4d;
+            height: 65px;
+            padding: 0 9%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            background: #e7a51c;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: bold;
+        }
+
+        .logo h2 {
+            font-size: 18px;
+        }
+
+        .logo p {
+            font-size: 8px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 23px 0;
+        }
+
+        nav a:hover {
+            color: #e7a51c;
+        }
+
+        .gallery-section {
+            max-width: 950px;
+            margin: 45px auto;
+            padding: 0 25px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h1 span {
+            color: #e7a51c;
+        }
+
+        .line {
+            text-align: center;
+            color: #e7a51c;
+            margin: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 22px;
+        }
+
+        .gallery img {
+            width: 30%;
+            min-width: 200px;
+            height: 160px;
+
+            object-fit: cover;
+            border-radius: 7px;
+
+            box-shadow: 0 4px 12px #0003;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: gray;
+        }
+
+        @media(max-width:650px) {
+            .gallery img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <div class="logo-icon">G</div>
+
+        <div>
+            <h2>GLA</h2>
+            <p>UNIVERSITY</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#about">ABOUT</a>
+    </nav>
+
+</header>
+
+
+<section class="gallery-section" id="gallery">
+
+    <h1>PHOTO <span>GALLERY</span></h1>
+
+    <div class="line">◆</div>
+
+    <div class="gallery">
+
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp">
+
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp">
+
+    </div>
+
+</section>
+
+
+<footer id="about">
+    GLA University | CSS Flexbox Assignment
+</footer>
+
+</body>
+</html>

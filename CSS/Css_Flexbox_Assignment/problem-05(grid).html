@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grid Area Assignment</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+
+    width: 650px;
+
+    max-width: 90%;
+
+    margin: 70px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-rows: repeat(3, 120px);
+
+    gap: 15px;
+
+    grid-template-areas:
+
+    "one two two three"
+
+    "four four five six"
+
+    "seven eight nine nine";
+}
+
+.box {
+
+    background: #23806f;
+
+    border-radius: 6px;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+<div class="box one"></div>
+
+<div class="box two"></div>
+
+<div class="box three"></div>
+
+<div class="box four"></div>
+
+<div class="box five"></div>
+
+<div class="box six"></div>
+
+<div class="box seven"></div>
+
+<div class="box eight"></div>
+
+<div class="box nine"></div>
+
+</div>
+
+
+</body>
+
+</html>

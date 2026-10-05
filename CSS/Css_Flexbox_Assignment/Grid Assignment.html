@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSS Grid Keyboard</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background: #10b5c8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Arial;
+}
+
+.keyboard {
+
+    width: 750px;
+
+    max-width: 95%;
+
+    background: #20282b;
+
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+.keys {
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    gap: 8px;
+}
+
+button {
+
+    height: 38px;
+
+    background: #293438;
+
+    color: #00a4c4;
+
+    border: none;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    box-shadow: 0 3px 4px #0005;
+}
+
+.delete {
+    grid-column: span 1;
+}
+
+.tab {
+    grid-column: span 1;
+}
+
+.caps {
+    grid-column: span 2;
+}
+
+.enter {
+    grid-column: span 2;
+}
+
+.shift {
+    grid-column: span 2;
+}
+
+.space {
+    grid-column: span 5;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="keyboard">
+
+<div class="keys">
+
+<button>Esc</button>
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button>0</button>
+<button>Delete</button>
+
+<button>Tab</button>
+<button>Q</button>
+<button>W</button>
+<button>E</button>
+<button>R</button>
+<button>T</button>
+<button>Y</button>
+<button>U</button>
+<button>I</button>
+<button>O</button>
+<button>P</button>
+<button>\</button>
+
+<button class="caps">Caps</button>
+<button>A</button>
+<button>S</button>
+<button>D</button>
+<button>F</button>
+<button>G</button>
+<button>H</button>
+<button>J</button>
+<button>K</button>
+<button>L</button>
+<button class="enter">Enter</button>
+
+<button class="shift">Shift</button>
+<button>Z</button>
+<button>X</button>
+<button>C</button>
+<button>V</button>
+<button>B</button>
+<button>N</button>
+<button>M</button>
+<button>&lt;</button>
+<button>&gt;</button>
+<button class="shift">Shift</button>
+
+<button>Ctrl</button>
+<button>Alt</button>
+<button class="space">Space</button>
+<button>Alt</button>
+<button>Ctrl</button>
+<button>←</button>
+<button>→</button>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

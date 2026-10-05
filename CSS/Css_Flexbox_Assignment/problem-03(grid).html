@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grid Area Layout</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+
+    width: 650px;
+
+    max-width: 90%;
+
+    margin: 80px auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+
+    grid-template-rows: 110px 110px;
+
+    gap: 15px;
+
+    grid-template-areas:
+
+    "a a b e"
+
+    "c d b e";
+}
+
+.box {
+
+    background: #444;
+
+    color: white;
+
+    border-radius: 7px;
+
+    padding: 25px;
+
+    font-size: 28px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+<div class="box a">A</div>
+
+<div class="box b">B</div>
+
+<div class="box c">C</div>
+
+<div class="box d">D</div>
+
+<div class="box e">E</div>
+
+</div>
+
+
+</body>
+
+</html>

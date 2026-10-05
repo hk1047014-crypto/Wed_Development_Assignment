@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calculator</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Arial;
+
+    background: white;
+}
+
+.calculator {
+
+    width: 450px;
+
+    max-width: 90%;
+
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    box-shadow: 0 4px 15px #0002;
+
+    border-radius: 10px;
+}
+
+.display {
+
+    grid-column: 1 / 5;
+
+    height: 70px;
+
+    padding: 20px;
+
+    text-align: right;
+
+    font-size: 25px;
+
+    border-radius: 8px;
+
+    box-shadow: inset 0 1px 7px #0002;
+}
+
+button {
+
+    height: 65px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: white;
+
+    box-shadow: 0 3px 10px #0002;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.operator {
+
+    background: black;
+
+    color: white;
+}
+
+.clear {
+
+    background: red;
+
+    color: white;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="calculator">
+
+
+<div class="display" id="display">
+</div>
+
+
+<button onclick="add('1')">1</button>
+<button onclick="add('2')">2</button>
+<button onclick="add('3')">3</button>
+<button class="operator" onclick="add('+')">+</button>
+
+
+<button onclick="add('4')">4</button>
+<button onclick="add('5')">5</button>
+<button onclick="add('6')">6</button>
+<button class="operator" onclick="add('-')">-</button>
+
+
+<button onclick="add('7')">7</button>
+<button onclick="add('8')">8</button>
+<button onclick="add('9')">9</button>
+<button class="operator" onclick="add('*')">×</button>
+
+
+<button class="clear" onclick="clearDisplay()">C</button>
+<button onclick="add('0')">0</button>
+<button class="operator" onclick="calculate()">=</button>
+<button class="operator" onclick="add('/')">/</button>
+
+
+</div>
+
+
+<script>
+
+let display = document.getElementById("display");
+
+
+function add(value) {
+
+    display.innerText += value;
+
+}
+
+
+function clearDisplay() {
+
+    display.innerText = "";
+
+}
+
+
+function calculate() {
+
+    try {
+
+        display.innerText =
+        eval(display.innerText);
+
+    }
+
+    catch {
+
+        display.innerText = "Error";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
