@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Problem 1</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 70%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 55px 170px;
+            gap: 12px;
+        }
+
+        nav {
+            grid-column: 1 / 5;
+            background-color: yellow;
+            font-size: 25px;
+            padding: 8px;
+        }
+
+        .box {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .one {
+            background-color: red;
+        }
+
+        .two {
+            background-color: #00f52a;
+        }
+
+        .three {
+            background-color: #5864e8;
+        }
+
+        .four {
+            background-color: #999;
+        }
+
+        /* Medium */
+        @media (max-width: 900px) {
+
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 55px 170px 170px;
+            }
+
+            nav {
+                grid-column: 1 / 3;
+            }
+
+            .box {
+                font-size: 22px;
+            }
+        }
+
+        /* Small */
+        @media (max-width: 600px) {
+
+            .container {
+                width: 70%;
+                grid-template-columns: 1fr;
+                grid-template-rows: 55px repeat(4, 140px);
+            }
+
+            nav {
+                grid-column: 1;
+            }
+
+            .one {
+                grid-row: 2;
+            }
+
+            .four {
+                grid-row: 3;
+            }
+
+            .two {
+                grid-row: 4;
+            }
+
+            .three {
+                grid-row: 5;
+            }
+
+            .box {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>Navigation</nav>
+
+        <div class="box one">Box 1</div>
+        <div class="box two">Box 2</div>
+        <div class="box three">Box 3</div>
+        <div class="box four">Box 4</div>
+
+    </div>
+
+</body>
+</html>
